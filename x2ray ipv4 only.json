@@ -1,0 +1,83 @@
+{
+  "log": {
+	"access": "/root/log/access.log",
+    "error": "/root/log/error.log",
+    "loglevel": "warning",
+    "dnsLog": false
+  },
+  "api": {
+    "services": [
+      "HandlerService",
+      "LoggerService",
+      "StatsService"
+    ],
+    "tag": "api"
+  },
+  "dns": {
+	"servers": [
+		"8.8.4.4",
+		"8.8.8.8",
+		"1.1.1.1",
+		"1.0.0.1",
+		"2001:4860:4860::8888",
+		"2001:4860:4860::8844",
+		"2606:4700:4700::1111",
+		"2606:4700:4700::1001"
+	],
+        "queryStrategy": "UseIP"
+  },
+  "routing": {
+    "rules": [
+		{
+			"type": "field",
+			"ip": [
+			  "geoip:private"
+			],
+			"outboundTag": "block"
+		},
+		{
+			"type": "field",
+			"domain": [
+			  "geosite:category-ads-all"
+			],
+			"outboundTag": "block"
+		},
+		{
+			"type": "field",
+			"inboundTag": ["api"],
+			"outboundTag": "api"       
+		}
+    ]
+  },
+  "policy": {
+    "system": {
+      "statsInboundDownlink": true,
+      "statsInboundUplink": true
+    }
+  },
+  "inbounds": [
+    {
+      "tag": "api",
+	  "listen": "127.0.0.1",
+      "port": 8855,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+       "settings": {
+		"domainStrategy": "UseIPv4"
+	  }
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {},
+      "tag": "blocked"
+    }
+  ],
+  "stats": {}
+}
