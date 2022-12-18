@@ -1,6 +1,6 @@
 #Mediacorp MeWatch
 USER-AGENT,*mewatch*
-USER-AGENT,MeWatch*
+USER-AGENT,meWATCH*
 
 DOMAIN-KEYWORD,mewatch
 DOMAIN-KEYWORD,mediacorp
