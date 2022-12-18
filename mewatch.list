@@ -1,1 +1,6 @@
+#Mediacorp MeWatch
+USER-AGENT,*mewatch*
+USER-AGENT,MeWatch*
 
+DOMAIN-KEYWORD,mewatch
+DOMAIN-SUFFIX,mewatch.sg
