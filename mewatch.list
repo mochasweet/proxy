@@ -3,4 +3,6 @@ USER-AGENT,*mewatch*
 USER-AGENT,MeWatch*
 
 DOMAIN-KEYWORD,mewatch
+DOMAIN-KEYWORD,mediacorp
 DOMAIN-SUFFIX,mewatch.sg
+DOMAIN-SUFFIX,mediacorp.sg
