@@ -16,6 +16,11 @@ DOMAIN,bsem.ddns.me
 DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN,df.poloemby.xyz
 DOMAIN,cu.poloemby.xyz
+DOMAIN-SUFFIX,pololine.ml
+DOMAIN,happy.pololine.ml
+DOMAIN,cmi.pololine.ml
+DOMAIN,jp.pololine.ml
+DOMAIN,sp.pololine.ml
 IP-CIDR,88.99.218.218/32
 DOMAIN,gia.kwz.io
 DOMAIN,cn2.kwz.io
