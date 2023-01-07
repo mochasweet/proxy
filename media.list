@@ -8,12 +8,12 @@ DOMAIN,sp.odysseyplus.site
 DOMAIN,agasg.odysseyplus.site
 # > DOMAIN,agahk.odysseyplus.site
 DOMAIN-SUFFIX,odysseyplus.site
+IP-CIDR,38.94.108.160/32
 DOMAIN,cf2.misakaf.org
 DOMAIN-SUFFIX,misakaf.org
 DOMAIN-SUFFIX,blueseacdn.com
 DOMAIN-SUFFIX,blueseamusics.com
 DOMAIN,bsem.ddns.me
-IP-CIDR,38.94.108.160/32
 IP-CIDR,212.90.120.164/32
 DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN,df.poloemby.xyz
